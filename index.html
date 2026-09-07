@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar no-print">
+      <h1>Invoice Generator</h1>
+      <div class="actions">
+        <button type="button" id="btn-reset">Reset Form</button>
+        <button type="button" id="btn-print">Print / Save PDF</button>
+      </div>
+    </header>
+    <main class="container">
+      <section class="form-panel no-print">
+      </section>
+      <section class="preview-pane" id="invoice-preview">
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
