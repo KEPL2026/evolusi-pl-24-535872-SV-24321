@@ -117,8 +117,8 @@
         <div class="invoice-sheet">
           <div class="invoice-header">
             <div class="invoice-brand">
-              <img x-show="sender.logoUrl" :src="sender.logoUrl" alt="Company Logo" class="invoice-logo" @error="sender.logoUrl = ''">
-              <h2 x-text="sender.companyName || 'Your Company'"></h2>
+              <img x-show="sender.logoUrl" :src="sender.logoUrl" src="data:," alt="Company Logo" class="invoice-logo" @error="sender.logoUrl = ''">
+              <h2 x-text="sender.companyName || 'Your Company'">Your Company</h2>
             </div>
             <div class="invoice-meta-block">
               <h3>INVOICE</h3>
@@ -148,11 +148,11 @@
           <table class="invoice-table">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Description</th>
-                <th class="num">Qty</th>
-                <th class="num">Price</th>
-                <th class="num">Total</th>
+                <th scope="col">#</th>
+                <th scope="col">Description</th>
+                <th scope="col" class="num">Qty</th>
+                <th scope="col" class="num">Price</th>
+                <th scope="col" class="num">Total</th>
               </tr>
             </thead>
             <tbody>
